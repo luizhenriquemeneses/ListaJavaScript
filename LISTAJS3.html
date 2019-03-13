@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<script>
+function MudarCor(cor){
+	switch (cor){
+	case 'Vermelho': document.bgColor = 'red';break;
+	case 'Verde': document.bgColor = 'green';break;
+	case 'Azul': document.bgColor = 'blue';break;
+	case 'Amarelo': document.bgColor = 'yellow';break;
+}
+}
+</script>
+<head>
+<meta charset="utf8">
+<title>Mudar a cor do Background da página</title>
+<form name="Corfundo">
+	<input type="radio" name="Fundo" onclick="MudarCor('Vermelho');">Vermelho<br>
+	<input type="radio" name="Fundo" onclick="MudarCor('Verde');">Verde<br>
+	<input type="radio" name="Fundo" onclick="MudarCor('Azul');">Azul<br>
+	<input type="radio" name="Fundo" onclick="MudarCor('Amarelo');">Amarelo<br>
+</form>
+</body>
+</html>
