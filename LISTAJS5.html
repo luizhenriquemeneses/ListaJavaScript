@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>--Formulário de Login--</title>
+    <meta charset="utf-8" />
+    <script language=javascript type="text/javascript">
+        function verificarTexto(){
+    if (form.texto.value == "")
+    {alert ("Não há texto escrito") }
+    }
+    </script>
+</head>
+<body>
+    <form name="meu_form">
+ 
+        <h1>Faça seu login</h1>
+ 
+        <p class="nome">
+            <input type="text" id="login" placeholder="" required="required" name="Login" />
+            <label for="login">Login</label>
+        </p>
+        <p class="fone">
+            <input type="password" id="senha" placeholder="" name="Senha" />
+            <label for="Senha">Senha</label>
+ 
+        </p>
+        <p>
+            <input type="password" id="confirmar senha" placeholder="xx-xx-xx-xx" name="Confirmar Senha" />
+            <label for="confirmar senha">Confirmar Senha</label>
+        </p>
+        <p>
+        </p>
+        <p class="submit">
+                <input type=button onClick="verificarTexto()">
+
+            <input type="submit" onclick="Enviar();" value="Enviar" />
+        </p>
+ 
+    </form>
+</body>
+</html>
